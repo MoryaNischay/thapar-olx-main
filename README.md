@@ -1,4 +1,4 @@
-# ⚛️ Thapar OLX
+# ⚛️ OLX clone
 
 
 - 👁 **Well typed**
