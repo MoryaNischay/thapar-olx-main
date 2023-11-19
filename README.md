@@ -1,8 +1,6 @@
 # ⚛️ Thapar Olx
 
 
-- 🙏 **Kindly Please Support Me**
-   - I can provide brand-free products and full technical support for 1 year along with 1-year free update support and moreover
 - 👁 **Well typed**
   - Clean JavaScript code with good folder structure.,
 - 📄 **Well documented**
