@@ -6,6 +6,7 @@ import Login from '../Pages/Login'
 import CreatePost from '../Pages/CreatePost'
 import ViewPost from '../Pages/ViewPost'
 import ViewMore from '../Pages/ViewMore'
+import MyPosts from '../Pages/MyPosts'
 
 
 
@@ -29,7 +30,10 @@ function MainRoutes() {
            </Route>
            <Route path="/viewmore">
                <ViewMore/>
-              </Route>
+            </Route>
+            <Route path="/myposts">
+               <MyPosts/>
+           </Route>
            
        </Router>
     )
