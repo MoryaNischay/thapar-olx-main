@@ -5,7 +5,7 @@ import "./Banner.css";
 
 function Banner() {
   let [category, setCategory] = useState();
-  
+
   return (
     <div className="bannerParentDiv">
       <div className="bannerChildDiv">
@@ -30,21 +30,19 @@ function Banner() {
             </select>
           </div> */}
           {/* <div className="otherQuickOptions"> */}
-            <span onClick={()=>setCategory("Clothing")} >Clothing</span>
-            <span onClick={()=>setCategory("Lab Items")} >Lab Items</span>
-            <span onClick={()=>setCategory("Electronics")} >Electronics</span>
-            <span onClick={()=>setCategory("General Purpose")} >General Purpose</span>
-            <span onClick={()=>setCategory("Books")} >Books</span>
-            <span onClick={()=>setCategory("Stationary")} >Stationary</span>
-            <span onClick={()=>setCategory("Mobile Phones")} >Mobile Phones</span>
-            <span onClick={()=>setCategory("Matress/Househol")} >Matress/Household</span>
+          <span onClick={() => setCategory("Electronics")}>Electronics</span>
+          <span onClick={() => setCategory("Clothing")}>Clothing</span>
+          <span onClick={() => setCategory("Stationary")}>Stationary</span>
+          <span onClick={() => setCategory("Household")}>Household</span>
+          <span onClick={() => setCategory("Books")}>Books</span>
+          <span onClick={() => setCategory("Others")}>Others</span>
           {/* </div> */}
         </div>
         <div className="banner">
           <img src="../../../Images/banner copy.png" alt="" />
         </div>
       </div>
-     { category!=null && <DynamicPosts category={category}/>  }
+      {category != null && <DynamicPosts category={category} />}
     </div>
   );
 }
