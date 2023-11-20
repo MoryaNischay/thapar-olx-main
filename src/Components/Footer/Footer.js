@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className="footerParentDiv">
       <div className="content">
-        <div>
+        {/* <div>
           <div className="heading">
             <p>POPULAR LOCATIONS</p>
           </div>
@@ -18,27 +18,18 @@ function Footer() {
               <li>Pune</li>
             </ul>
           </div>
-        </div>
+        </div> */}
         <div>
           <div className="heading">
-            <p>ABOUT US</p>
+            <p>Made With ❤️ By</p>
           </div>
           <div className="list">
-            <ul>
-              <li>
-                <a href="https://github.com/AdityaTomar-AT">Aditya Tomar</a>
-              </li>
-              <li>
-                <a href="https://github.com/Rushil08">Rushil Agarwal</a>
-              </li>
-              <li>
-                <a href="https://github.com/MoryaNischay">Nischay Morya</a>
-              </li>
-              {/* <li></li> */}
-            </ul>
+            <a href="https://github.com/AdityaTomar-AT">Aditya Tomar</a>
+            <a href="https://github.com/Rushil08">Rushil Agarwal</a>
+            <a href="https://github.com/MoryaNischay">Nischay Morya</a>
           </div>
         </div>
-        <div>
+        {/* <div>
           <div className="heading">
             <p>OLX</p>
           </div>
@@ -49,7 +40,7 @@ function Footer() {
               <li>Legal & Privacy information</li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="footer">
         {/* <p>Other Countries Pakistan - South Africa - Indonesia</p> */}

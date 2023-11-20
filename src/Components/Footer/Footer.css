@@ -1,13 +1,13 @@
 .footerParentDiv {
   width: 100%;
- 
 }
 .footerParentDiv .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  background: #ebeeef;
-  padding: 16px;  
+  background: #cacaca;
+  padding: 16px;
+  /* margin-right: 20px; */
 }
 .footerParentDiv .content .heading {
   font-size: 24px;
@@ -25,4 +25,14 @@
 
 .footerParentDiv .footer p {
   margin: 0;
+}
+
+a {
+  color: rgb(185, 43, 43);
+  text-decoration: none;
+}
+
+.list a {
+  font-size: 1.2rem;
+  margin-right: 20px;
 }

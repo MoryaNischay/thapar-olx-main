@@ -36,6 +36,10 @@
   /* border: 1px solid #000000; */
 }
 
+.bannerParentDiv .bannerChildDiv .menuBar span:hover {
+  color: white;
+}
+
 .bannerParentDiv .bannerChildDiv .menuBar > *:last-child {
   border-right: none; /* Remove the right border for the last item */
 }
