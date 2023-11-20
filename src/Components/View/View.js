@@ -67,10 +67,10 @@ function View() {
         </div>
         {/* add a button which only appears if the user logged in has created the post*/}
         {Firebase.auth().currentUser && postContent.userId === Firebase.auth().currentUser.uid && (
-  <Link to={`/edit/${postContent.id}`}>
-    <button className="Mark As Sold" onClick={Marksold}>Mark As Sold</button>
-  </Link>
-)}
+            <Link to={`/edit/${postContent.id}`}>
+              <button className="Mark As Sold" onClick={Marksold}>Mark As Sold</button>
+            </Link>
+        )}
 
       </div>
     </div>
