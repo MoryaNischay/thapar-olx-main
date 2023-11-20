@@ -36,7 +36,7 @@ function Posts() {
       });
     Firebase.firestore() //retreving all posts from firebase in asecnding order of date
       .collection("products")
-      
+      .where("status", "==", "Not Sold")
       .orderBy("createdAt", "asc")
       .get()
       .then((snapshot) => {

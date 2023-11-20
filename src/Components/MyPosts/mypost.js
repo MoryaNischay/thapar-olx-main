@@ -11,7 +11,6 @@ import { AllPostContext } from "../../contextStore/AllPostContext";
 function MyPost() {
   const { setAllPost } = useContext(AllPostContext);
   let [posts, setPosts2] = useState([]); //for showing all posts in Descending order of date
-  //let [posts2, setPosts2] = useState([]); //for showing all posts in Ascending order of date
   let [loading, setLoading] = useState(false);
 
   useEffect(() => {//show only those posts which are not sold
