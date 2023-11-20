@@ -16,9 +16,9 @@ export default function Signup() {
   const handleSubmit = (e) => {
     if (password.length < 6) {
       console.log('input value is empty');
-      alert("input fields cannot be empty and an image is required");
+      alert("Password cannot be less than 6 characters");
     } else {
-      console.log('input value is not empty');}
+      console.log('input value is not empty');
     setLoading(true)
     e.preventDefault();
     Firebase.auth()
@@ -34,7 +34,7 @@ export default function Signup() {
       })
       .then(() => {
         history.push("/login");
-      });
+      });}
   };
   return (<>
     {loading && <SignUpLoading/> } <div>
