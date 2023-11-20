@@ -1,4 +1,4 @@
-import React, { useContext,useState } from "react";
+import React, { useContext, useState } from "react";
 import { useHistory } from "react-router";
 import { AllPostContext } from "../../contextStore/AllPostContext";
 
@@ -13,7 +13,7 @@ import { AuthContext } from "../../contextStore/AuthContext";
 import { Firebase } from "../../firebase/config";
 import Search from "../Search/Search";
 function Header() {
-  const{allPost}=useContext(AllPostContext)
+  const { allPost } = useContext(AllPostContext);
   // const{setPostContent}=useContext(PostContext)
   const history = useHistory();
   // const [filteredData, setFilteredData] = useState([]);
@@ -44,7 +44,7 @@ function Header() {
   //    alert("Please enter a product name to search");
   // }
   const { user } = useContext(AuthContext);
-  
+
   const logoutHandler = () => {
     Firebase.auth()
       .signOut()
@@ -55,26 +55,23 @@ function Header() {
   return (
     <div className="headerParentDiv">
       <div className="headerChildDiv">
-      
         <div className="brandName">
-        <Link to="/">
-          <img src={OlxLogo} alt="Logo"/>
-        </Link>
+          <Link to="/">
+            <img src={OlxLogo} alt="Logo" />
+          </Link>
           {/* <OlxLogo></OlxLogo> */}
         </div>
         <div className="productSearch">
           <Search />
         </div>
-        
+
         {/* <div className="language">
           <span> ENGLISH </span>
           <Arrow></Arrow>
         </div> */}
         <div className="loginPage">
           {user ? (
-            <Link to="/myposts">
-              {user.displayName}
-            </Link>
+            <Link to="/myposts">{user.displayName}</Link>
           ) : (
             <Link to="/login">
               <span>Login</span>
@@ -87,7 +84,7 @@ function Header() {
             Logout
           </span>
         )}
-        
+
         <Link to="/create">
           {" "}
           <div className="sellMenu">
@@ -98,8 +95,6 @@ function Header() {
             </div>
           </div>
         </Link>
-      
-        
       </div>
     </div>
   );

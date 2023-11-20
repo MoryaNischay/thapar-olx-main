@@ -14,9 +14,9 @@ function PostCards({product,index}) {
         setPostContent(product)
         history.push("/view")
       }}>
-        <div className="favorite">
+        {/* <div className="favorite">
           <Heart></Heart>
-        </div>
+        </div> */}
         <div className="image">
           <img src={product.url} alt="" />
         </div>

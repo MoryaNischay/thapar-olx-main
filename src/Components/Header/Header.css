@@ -1,14 +1,14 @@
 .headerParentDiv {
   padding: 5px;
   /* background-color: whitesmoke; */
-  background-color: rgb(215, 214, 214);
+  background-color: #9f9f9f;
   position: fixed;
   width: 100vw;
   z-index: 999;
 }
 
 .headerChildDiv {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,7 +96,6 @@
   margin-right: 5px;
 }
 
-
 .span {
   text-decoration: none;
   font-size: 16px;
@@ -113,7 +112,7 @@
   height: 2px;
 }
 
-.loginPage a{
+.loginPage a {
   text-decoration: none;
 }
 
@@ -158,51 +157,54 @@
 
 @media only screen and (max-width: 700px) {
   .placeSearch,
-  .productSearch{
+  .productSearch {
     display: none;
   }
 }
-.logout-span{
+.logout-span {
   cursor: pointer;
 }
 
 .dataResult-header {
-    
   position: absolute;
   top: 60px;
   left: 85px;
-   width: 16em;
-   height: 150px;
-   background-color: white;
-   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-   overflow: hidden;
-   overflow-y: auto;
- }
- 
- /* .dataResult-header::-webkit-scrollbar {
+  width: 16em;
+  height: 150px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* .dataResult-header::-webkit-scrollbar {
    display: none;
  } */
- 
- .dataResult-header .dataItem-header {
-   width: 100%;
-   height: 30px;
-   display: flex;
-   align-items: center;
-   color: black;
-   font-size: smaller;
- }
- 
- .dataItem-header p {
-   margin-left: 10px;
- }
 
- 
- .dataResult-header  :hover {
-   background-color: #ebeeef;
- }
- 
- .brandName img{
+.dataResult-header .dataItem-header {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: smaller;
+}
+
+.dataItem-header p {
+  margin-left: 10px;
+}
+
+.dataResult-header :hover {
+  background-color: #ebeeef;
+}
+
+.brandName img {
   height: 100px;
   margin: 0;
-  
- }
+  margin-left: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
