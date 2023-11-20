@@ -18,9 +18,10 @@ function Posts() {
 
     setLoading(true);
     setLoading2(true)
-    Firebase.firestore() //retreving all posts from firebase in descending order and only those posts which are not sold
+    Firebase.firestore() //retreving all posts from firebase which are made by user
+
       .collection("products")
-      
+      //.where("userId", "==", Firebase.auth().currentUser.uid)
       .orderBy("createdAt", "desc")
       .get()
       .then((snapshot) => {
@@ -36,7 +37,6 @@ function Posts() {
       });
     Firebase.firestore() //retreving all posts from firebase in asecnding order of date
       .collection("products")
-      
       .orderBy("createdAt", "asc")
       .get()
       .then((snapshot) => {
