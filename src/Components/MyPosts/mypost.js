@@ -35,6 +35,27 @@ function MyPost() {
       });
   }, [setAllPost]);
   // quickMenuCards assign all cards of post item later it will be displayed
+  if(posts.length===0){
+    return (
+      <div className="postParentDiv">
+        {posts && (
+          <div className="moreView">
+            <div className="heading">
+              <span>Your Posts</span>
+              <Link to="./viewmore">
+                {" "}
+                <span>View more</span>{" "}
+              </Link>
+            </div>
+            <div className="cards">
+              {" "}
+              {loading ? <BarLoading /> : <h1>No Posts</h1>}
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }
   let quickMenuCards = posts.map((product, index) => {
     return(<div className="quick-menu-cards" key={index}> <PostCards product={product} index={index} /> </div>);
   });

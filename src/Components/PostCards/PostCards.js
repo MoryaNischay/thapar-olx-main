@@ -22,8 +22,8 @@ function PostCards({product,index}) {
         </div>
         <div className="content">
           <p className="rate">&#x20B9; {product.price}</p>
-          <span className="category"> {product.category} </span>
-          <p className="name"> {product.name}</p>
+          <span className="name"> {product.name} </span>
+          <p className="catergory"> {product.category}</p>
         </div>
         <div className="date">
           <span>{product.createdAt}</span>
