@@ -70,7 +70,7 @@ function View() {
             <Link to={`/edit/${postContent.id}`}>
               <button className="Mark As Sold" onClick={Marksold}>Mark As Sold</button>
             </Link>
-        )}
+          )}
 
       </div>
     </div>
