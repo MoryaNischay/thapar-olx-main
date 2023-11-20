@@ -2,9 +2,8 @@ import React,{useEffect,useContext} from 'react';
 
 import Header from '../Components/Header/Header';
 import Banner from '../Components/Banner/Banner';
-
-import Posts from '../Components/Posts/Posts';
 import Footer from '../Components/Footer/Footer';
+import Mypost from '../Components/MyPosts/mypost';
 import { Firebase } from '../firebase/config';
 import { AuthContext } from '../contextStore/AuthContext';
 
@@ -24,7 +23,7 @@ function MyPosts(props) {
     <div className="homeParentDiv">
       <Header />
       <Banner />
-      
+      <Mypost/>
       <Footer />
     </div>
   );
