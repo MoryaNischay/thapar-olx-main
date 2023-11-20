@@ -38,6 +38,7 @@
     display: flex; */
     place-items: center;
     color: black;
+    ;
   }
   
   input:focus {
@@ -45,6 +46,7 @@
   }
   .searchIcon svg {
     font-size: 35px;
+    cursor: pointer
   }
   
   .dataResult {
