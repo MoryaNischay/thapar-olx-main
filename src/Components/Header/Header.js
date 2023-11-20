@@ -66,10 +66,10 @@ function Header() {
           <Search />
         </div>
         
-        <div className="language">
+        {/* <div className="language">
           <span> ENGLISH </span>
           <Arrow></Arrow>
-        </div>
+        </div> */}
         <div className="loginPage">
           {user ? (
             <Link to="/myposts">
