@@ -25,11 +25,12 @@ function MyPost() {
           setUserDetails(doc.data());
         });
       });
-  },[history]);
-  useEffect(() => {//show only those posts which are not sold
+  }, [history]);
+  useEffect(() => {
+    //show only those posts which are not sold
 
     setLoading(true);
-    
+
     Firebase.firestore() //retreving all posts from firebase which are not sold
       .collection("products")
       .where("userId", "==", Firebase.auth().currentUser.uid)
@@ -48,7 +49,7 @@ function MyPost() {
       });
   }, [setAllPost]);
   // quickMenuCards assign all cards of post item later it will be displayed
-  if(posts.length===0){
+  if (posts.length === 0) {
     return (
       <div className="postParentDiv">
         {posts && (
@@ -70,7 +71,12 @@ function MyPost() {
     );
   }
   let quickMenuCards = posts.map((product, index) => {
-    return(<div className="quick-menu-cards" key={index}> <PostCards product={product} index={index} /> </div>);
+    return (
+      <div className="quick-menu-cards" key={index}>
+        {" "}
+        <PostCards product={product} index={index} />{" "}
+      </div>
+    );
   });
 
   return (
@@ -78,19 +84,18 @@ function MyPost() {
       {userDetails && (
         <div className="userDetails">
           <div className="heading">
-            <span>Your Details</span>
+            <p>My Account</p>
           </div>
           <div className="details">
             <p>Name : {userDetails.name}</p>
             <p>Phone : {userDetails.phone}</p>
-            
           </div>
         </div>
       )}
       {posts && (
         <div className="moreView">
           <div className="heading">
-            <span>Your Posts</span>
+            <span>My Posts</span>
             <Link to="./viewmore">
               {" "}
               <span>View more</span>{" "}
@@ -103,7 +108,6 @@ function MyPost() {
         </div>
       )}
       {/* show the user details */}
-      
     </div>
   );
 }
