@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {useHistory} from "react-router-dom";
 import { Firebase } from "../../firebase/config";
-import Logo from "../../olx-logo.png";
+import Logo from "../../assets/ThaparOlxlogo.png";
 import RoundLoading from "../Loading/RoundLoading";
 import "./Login.css";
 
