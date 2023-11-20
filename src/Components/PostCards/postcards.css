@@ -32,10 +32,10 @@
     font-size: larger;
     font-weight: bold;
   }
-  .card .content .category {
-    font-size: medium;
-  }
   .card .content .name {
+    font-size: large;
+  }
+  .card .content .category {
     font-size: small;
   }
   .card .date {
