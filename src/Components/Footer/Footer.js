@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './Footer.css';
+import "./Footer.css";
 
 function Footer() {
   return (
@@ -25,10 +25,16 @@ function Footer() {
           </div>
           <div className="list">
             <ul>
-              <li>About OLX Group</li>
-              <li>Careers</li>
-              <li>Contact Us</li>
-              <li>OLXPeople</li>
+              <li>
+                <a href="https://github.com/AdityaTomar-AT">Aditya Tomar</a>
+              </li>
+              <li>
+                <a href="https://github.com/Rushil08">Rushil Agarwal</a>
+              </li>
+              <li>
+                <a href="https://github.com/MoryaNischay">Nischay Morya</a>
+              </li>
+              {/* <li></li> */}
             </ul>
           </div>
         </div>
@@ -46,8 +52,8 @@ function Footer() {
         </div>
       </div>
       <div className="footer">
-        <p>Other Countries Pakistan - South Africa - Indonesia</p>
-        <p>Free Classifieds in India. © 2006-2021 OLX</p>
+        {/* <p>Other Countries Pakistan - South Africa - Indonesia</p> */}
+        <p>Free Classifieds in Thapar. © 2021-2025</p>
       </div>
     </div>
   );

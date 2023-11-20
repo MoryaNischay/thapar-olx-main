@@ -25,7 +25,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin:2em;
+  margin: 2em;
 }
 
 .moreView .cards {
@@ -33,7 +33,6 @@
   overflow-x: scroll;
   overflow-y: hidden;
 }
-
 
 .recommendations {
   margin: 16px 16px 24px;
@@ -45,23 +44,23 @@
   font-size: 24px;
   color: #002f34;
 }
-.postParentDiv{
+.postParentDiv {
   padding: auto;
 }
 
-.fresh-recomendation-cards{
+.fresh-recomendation-cards {
   margin: 2em;
   display: flex;
   flex: wrap;
   justify-content: space-evenly;
 }
-.fresh-recomendation-card{
-  display:flex;
+.fresh-recomendation-card {
+  display: flex;
   flex: wrap;
   justify-content: space-evenly;
   margin-bottom: 2em;
 }
-.quick-menu-cards{
+.quick-menu-cards {
   display: inline;
   white-space: nowrap;
   overflow-x: scroll;

@@ -1,5 +1,5 @@
 .footerParentDiv {
-  width: 100vw;
+  width: 100%;
  
 }
 .footerParentDiv .content {
@@ -7,9 +7,7 @@
   justify-content: space-between;
   align-items: center;
   background: #ebeeef;
-  padding: 16px;
-  
-  
+  padding: 16px;  
 }
 .footerParentDiv .content .heading {
   font-size: 24px;
