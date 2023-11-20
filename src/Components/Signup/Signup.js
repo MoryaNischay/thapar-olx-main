@@ -14,9 +14,9 @@ export default function Signup() {
   let [password, setPassword] = useState("");
   let [loading,setLoading]=useState(false)
   const handleSubmit = (e) => {
-    if (password.length < 6) {
+    if (!name || !email || !phone || !password) {
       alert("Password cannot be less than 6 characters");
-    }else if(!name || !email || !phone || !password) {
+    }else if(password.length < 6) {
       alert("input fields cannot be empty");
     } 
     else {

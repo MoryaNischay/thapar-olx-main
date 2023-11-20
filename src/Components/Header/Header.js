@@ -1,11 +1,10 @@
 import React, { useContext,useState } from "react";
 import { useHistory } from "react-router";
 import { AllPostContext } from "../../contextStore/AllPostContext";
-import { PostContext } from "../../contextStore/PostContext";
+
 import "./Header.css";
 // import OlxLogo from "../../assets/OlxLogo";
 import OlxLogo from "../../assets/ThaparOlxlogo.png";
-import SearchIcon from "../../assets/SearchIcon"
 import Arrow from "../../assets/Arrow";
 import SellButton from "../../assets/SellButton";
 import SellButtonPlus from "../../assets/SellButtonPlus";
