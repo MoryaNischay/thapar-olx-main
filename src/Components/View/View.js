@@ -65,12 +65,13 @@ function View() {
           <p className="p-bold">Status</p>
           <span>{postContent.status}</span>
         </div>
-        {/* add a button which only appears if the user has created this listing */}
-        {postContent.userId === Firebase.auth().currentUser.uid && (
-          <Link to={`/edit/${postContent.id}`}>
-            <button className="Mark As Sold " onClick={Marksold}>Mark As Sold</button> 
-          </Link>
-        )}
+        {/* add a button which only appears if the user logged in has created the post*/}
+        {Firebase.auth().currentUser && postContent.userId === Firebase.auth().currentUser.uid && (
+  <Link to={`/edit/${postContent.id}`}>
+    <button className="Mark As Sold" onClick={Marksold}>Mark As Sold</button>
+  </Link>
+)}
+
       </div>
     </div>
   );
