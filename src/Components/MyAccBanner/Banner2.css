@@ -1,0 +1,73 @@
+.bannerParentDiv {
+    padding-top: 7em;
+  }
+  
+  /* .bannerParentDiv .bannerChildDiv .menuBar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px 16px 10px 16px;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 0 13px 0 13px;
+  }
+  
+   */
+  
+  .bannerParentDiv .bannerChildDiv .menuBar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    padding: 10px 40px 10px 40px;
+    font-size: 1.2rem;
+    margin: 1 13px;
+    background-color: rgb(221, 111, 39);
+    width: 100%;
+  }
+  .bannerParentDiv .bannerChildDiv .menuBar span {
+    cursor: pointer;
+    /* add a border */
+    /* padding: 20px; */
+    /* border: 1px solid #000000; */
+  }
+  
+  .bannerParentDiv .bannerChildDiv .menuBar > *:last-child {
+    border-right: none; /* Remove the right border for the last item */
+  }
+  
+  .bannerParentDiv .bannerChildDiv .menuBar .categoryMenu span {
+    margin-right: 16px;
+    /* height: 100px; */
+    font-weight: bolder;
+  }
+  
+  /* .bannerParentDiv .bannerChildDiv .menuBar .otherQuickOptions span {
+    padding: 10px;
+    font-size: 1.2rem;
+  } */
+  
+  .bannerChildDiv .banner {
+    position: relative;
+    width: 100%;
+  }
+  .bannerChildDiv .banner img {
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .otherQuickOptions {
+      display: none;
+    }
+    .bannerChildDiv .banner {
+      position: relative;
+    }
+  }
+  
+  .otherQuickOptions span {
+    cursor: pointer;
+  }
+  
