@@ -20,9 +20,9 @@ function Footer() {
           </div>
         </div> */}
         <div>
-          <div className="heading">
-            <p>Made With ❤️ By</p>
-          </div>
+         
+            <p className="heading">Made With ❤️ By</p>
+         
           <div className="list">
             <a href="https://github.com/AdityaTomar-AT">Aditya Tomar</a>
             <a href="https://github.com/Rushil08">Rushil Agarwal</a>

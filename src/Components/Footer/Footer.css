@@ -3,15 +3,19 @@
 }
 .footerParentDiv .content {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background: #cacaca;
   padding: 16px;
   /* margin-right: 20px; */
 }
 .footerParentDiv .content .heading {
-  font-size: 24px;
+  font-size: 1.2rem;
   font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: -7px;
 }
 
 .footerParentDiv .footer {
