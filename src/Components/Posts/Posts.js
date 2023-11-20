@@ -14,11 +14,13 @@ function Posts() {
   let [posts2, setPosts2] = useState([]); //for showing all posts in Ascending order of date
   let [loading, setLoading] = useState(false);
   let [loading2,setLoading2] = useState(false)
-  useEffect(() => {
+  useEffect(() => {//show only those posts which are not sold
+
     setLoading(true);
     setLoading2(true)
-    Firebase.firestore() //retreving all posts from firebase in descending order
+    Firebase.firestore() //retreving all posts from firebase in descending order and only those posts which are not sold
       .collection("products")
+      
       .orderBy("createdAt", "desc")
       .get()
       .then((snapshot) => {
@@ -34,6 +36,7 @@ function Posts() {
       });
     Firebase.firestore() //retreving all posts from firebase in asecnding order of date
       .collection("products")
+      
       .orderBy("createdAt", "asc")
       .get()
       .then((snapshot) => {

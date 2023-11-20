@@ -14,6 +14,11 @@ export default function Signup() {
   let [password, setPassword] = useState("");
   let [loading,setLoading]=useState(false)
   const handleSubmit = (e) => {
+    if (password.length < 6) {
+      console.log('input value is empty');
+      alert("input fields cannot be empty and an image is required");
+    } else {
+      console.log('input value is not empty');}
     setLoading(true)
     e.preventDefault();
     Firebase.auth()
