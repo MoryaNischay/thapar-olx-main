@@ -56,8 +56,11 @@ function Header() {
   return (
     <div className="headerParentDiv">
       <div className="headerChildDiv">
+      
         <div className="brandName">
+        <Link to="/">
           <img src={OlxLogo} alt="Logo"/>
+        </Link>
           {/* <OlxLogo></OlxLogo> */}
         </div>
         <div className="productSearch">
