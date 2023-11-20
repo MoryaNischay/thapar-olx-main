@@ -73,7 +73,9 @@ function Header() {
         </div>
         <div className="loginPage">
           {user ? (
-            user.displayName
+            <Link to="/myposts">
+              {user.displayName}
+            </Link>
           ) : (
             <Link to="/login">
               <span>Login</span>
