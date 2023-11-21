@@ -18,6 +18,8 @@ export default function Signup() {
       alert("input fields cannot be empty");
     }else if(password.length < 6) {
       alert("Password cannot be less than 6 characters");
+    }else if(phone.length < 10 || phone.length > 10) {
+      alert("Invalid Phone Number");
     } 
     else {
       console.log('input value is not empty');
@@ -66,6 +68,8 @@ export default function Signup() {
           <label>Phone</label>
           <br />
           <input
+          maxLength={10}
+          minLength={10}
             className="input"
             type="number"
             value={phone}
