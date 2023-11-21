@@ -1,11 +1,8 @@
-import React, { useContext, useState } from "react";
+import React, { useContext} from "react";
 import { useHistory } from "react-router";
-import { AllPostContext } from "../../contextStore/AllPostContext";
-
 import "./Header.css";
 // import OlxLogo from "../../assets/OlxLogo";
 import OlxLogo from "../../assets/ThaparOlxlogo.png";
-import Arrow from "../../assets/Arrow";
 import SellButton from "../../assets/SellButton";
 import SellButtonPlus from "../../assets/SellButtonPlus";
 import { Link } from "react-router-dom";
@@ -13,36 +10,12 @@ import { AuthContext } from "../../contextStore/AuthContext";
 import { Firebase } from "../../firebase/config";
 import Search from "../Search/Search";
 function Header() {
-  const { allPost } = useContext(AllPostContext);
+  //const { allPost } = useContext(AllPostContext);
   // const{setPostContent}=useContext(PostContext)
   const history = useHistory();
   // const [filteredData, setFilteredData] = useState([]);
-  const [wordEntered, setWordEntered] = useState("");
-  const handleFilter = (event) => {
-    const searchWord = event.target.value;
-    setWordEntered(searchWord);
-    const newFilter = allPost.filter((value) => {
-      return value.name.toLowerCase().includes(searchWord.toLowerCase());
-    });
-
-    // if (searchWord === "") {
-    //   setFilteredData([]);
-    // } else {
-    //   setFilteredData(newFilter);
-    // }
-  };
-  // const clearInput = () => {
-  //   setFilteredData([]);
-  //   setWordEntered("");
-  // };
-  // const handleSelectedSearch=(value)=>{
-  //      setPostContent(value)
-  //      history.push("/view")
-
-  // }
-  // const handleEmptyClick=()=>{
-  //    alert("Please enter a product name to search");
-  // }
+  
+  
   const { user } = useContext(AuthContext);
 
   const logoutHandler = () => {
@@ -59,16 +32,13 @@ function Header() {
           <Link to="/">
             <img src={OlxLogo} alt="Logo" />
           </Link>
-          {/* <OlxLogo></OlxLogo> */}
+          
         </div>
         <div className="productSearch">
           <Search />
         </div>
 
-        {/* <div className="language">
-          <span> ENGLISH </span>
-          <Arrow></Arrow>
-        </div> */}
+        
         <div className="loginPage">
           {user ? (
             <Link to="/myposts">{user.displayName}</Link>
