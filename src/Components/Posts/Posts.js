@@ -21,7 +21,7 @@ function Posts() {
     Firebase.firestore() //retreving all posts from firebase which are not sold
       .collection("products")
       .where("status", "==", "Not Sold")
-      .orderBy("createdAt", "desc")
+      .orderBy("price", "asc")
       .get()
       .then((snapshot) => {
         let allPostsDescendingOder = snapshot.docs.map((product) => {

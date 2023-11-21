@@ -4,13 +4,20 @@
 }
 .viewParentDiv .imageShowDiv {
   padding: 16px;
-  width: 70vw;
+  width: 1000px;
+  /* center the image in this */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 .viewParentDiv .imageShowDiv img {
-  width: 65vw;
-  height:100%;
+  width: 700px;
+  height: 700px;
   object-fit: cover;
+  /* center the image */
+  
 }
 
 .viewParentDiv .rightSection {
